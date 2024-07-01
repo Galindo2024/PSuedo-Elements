@@ -1,0 +1,82 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(ayanokouji.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-header {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.intro-paragraph {
+    font-size: 1.2em;
+    color:white;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.cta-button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto;
+    position: relative;
+}
+
+.main-header::before, .main-header::after {
+    content: '★';
+    color: #ff0;
+    position: center;
+}
+
+.main-header::before {
+    left: -20px;
+}
+
+.main-header::after {
+    right: -20px;
+}
+
+.intro-paragraph::before, .intro-paragraph::after {
+    content: '"';
+    color: #aaa;
+    font-size: 2em;
+    position: center;
+}
+
+.intro-paragraph::before {
+    top: -10px;
+    left: -10px;
+}
+
+.intro-paragraph::after {
+    bottom: -10px;
+    right: -10px;
+}
+
+.cta-button::before, .cta-button::after {
+    content: '👉';
+    color: #fff;
+    position: absolute;
+}
+
+.cta-button::before {
+    left: -20px;
+}
+
+.cta-button::after {
+    right: -20px;
+}
